@@ -1,0 +1,35 @@
+name: 💡 Sugestão de Feature
+description: Tem uma ideia para melhorar o mod? Adoraria ouvir.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Sugestões são sempre bem-vindas! Não prometo implementar tudo, mas leio cada uma. 👀
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: Qual é a sua ideia?
+      description: Descreve o que gostarias de ver no mod.
+      placeholder: "Ex: Seria legal ter uma tecla de atalho configurável para cada slot extra."
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Por que isso melhoraria o mod?
+      placeholder: "Ex: As teclas fixas 4-0 conflitam com outros mods que uso..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Já pensou em alguma alternativa?
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Mais alguma coisa?

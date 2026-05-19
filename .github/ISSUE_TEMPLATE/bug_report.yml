@@ -1,0 +1,105 @@
+name: 🐛 Bug Report
+description: Algo não está funcionando como esperado? Me conta.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por abrir um report! Quanto mais detalhes você der, mais rápido consigo resolver. 🙏
+
+  - type: input
+    id: mod_version
+    attributes:
+      label: Versão do Bag Expander
+      placeholder: "ex: 1.0.2"
+    validations:
+      required: true
+
+  - type: input
+    id: game_version
+    attributes:
+      label: Versão do R.E.P.O.
+      description: Aparece no canto da tela principal do jogo.
+      placeholder: "ex: Build 23250495"
+    validations:
+      required: true
+
+  - type: input
+    id: slot_count
+    attributes:
+      label: Quantos slots você configurou?
+      placeholder: "ex: 6"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: multiplayer
+    attributes:
+      label: Como estava jogando quando o bug aconteceu?
+      options:
+        - Singleplayer
+        - Multiplayer (era o host)
+        - Multiplayer (era cliente)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: host_controls
+    attributes:
+      label: HostControls estava ativado?
+      options:
+        - "Sim"
+        - "Não"
+        - "Não sei"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: O que aconteceu?
+      description: Descreva o bug da forma mais clara possível.
+      placeholder: "Ex: Os slots extras aparecem na UI mas não consigo equipar itens neles."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: O que deveria ter acontecido?
+      placeholder: "Ex: Os slots extras deveriam funcionar normalmente como os 3 originais."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Como reproduzir o bug?
+      description: Passo a passo para chegar no mesmo problema.
+      placeholder: |
+        1. Configurei SlotCount para...
+        2. Iniciei uma partida...
+        3. Tentei equipar um item no slot 4 e...
+    validations:
+      required: true
+
+  - type: textarea
+    id: log
+    attributes:
+      label: Log do BepInEx
+      description: Cole aqui o conteúdo de `BepInEx/LogOutput.log`.
+      render: text
+      placeholder: "Cole o log aqui..."
+
+  - type: textarea
+    id: other_mods
+    attributes:
+      label: Outros mods instalados
+      description: Especialmente importante se tiver outros mods de inventário.
+      placeholder: "Ex: MoreInventorySlots, REPOConfig..."
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Informações extras
+      description: Prints, GIFs, qualquer coisa que ajude a entender o problema.
