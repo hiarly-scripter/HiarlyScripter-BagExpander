@@ -1,0 +1,29 @@
+[config]
+schemaVersion = "0.0.1"
+
+[package]
+namespace = "HiarlyScripter"
+name = "BagExpander"
+versionNumber = "1.0.2"
+description = "Expanda sua mochila! Configure de 0 a 10 slots de inventário, com suporte completo a multiplayer e modo base."
+websiteUrl = "https://discord.com/users/hiarly_ferreira"
+containsNsfwContent = false
+
+[package.dependencies]
+"BepInEx-BepInExPack" = "5.4.2100"
+
+[build]
+icon = "./package/icon.png"
+readme = "./package/README.md"
+outdir = "./build"
+
+[[build.copy]]
+source = "./package/plugins"
+target = ""
+
+[publish]
+repository = "https://thunderstore.io"
+communities = [ "repo", ]
+
+[publish.categories]
+repo = [ "mods", "upgrades", "quality-of-life", "serverside", "ai-generated", ]

@@ -1,0 +1,9 @@
+{
+  "name": "BagExpander",
+  "version_number": "1.0.2",
+  "website_url": "https://discord.com/users/hiarly_ferreira",
+  "description": "Expanda sua mochila! Configure de 0 a 10 slots de inventário, com suporte completo a multiplayer e modo base.",
+  "dependencies": [
+    "BepInEx-BepInExPack-5.4.2305"
+  ]
+}
